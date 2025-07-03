@@ -122,7 +122,7 @@ El modelo es ampliable a:
 
 ---
 
-## **6️⃣ Autoras y Colaboradoras** **Enlaces a Repositorios Personales**
+## **6️⃣ Autoras y Colaboradoras** / **Enlaces a Repositorios Personales**
 
 👩 **Montse** * GitHub \[enlace]
 👩 **Iran** * GitHub \[enlace]
