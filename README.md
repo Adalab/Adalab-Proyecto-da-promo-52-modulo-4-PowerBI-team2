@@ -4,115 +4,131 @@
 
 ## **1️⃣ Descripción General**
 
-Este proyecto tiene como finalidad el diseño, mediante herramientas de análisis de datos, de un itinerario enoturístico adaptado a los gustos, limitaciones y preferencias de cinco viajeras diferentes.
+Este proyecto desarrolla, mediante herramientas de análisis de datos, un itinerario enoturístico adaptado a los gustos, limitaciones y preferencias de cinco viajeras diferentes.
 
-Para lograrlo, se parte de un extenso dataset de vinos, regiones vitivinícolas, denominaciones de origen, variedades de uva, precios y puntuaciones, que se transforma en conocimiento aplicable para la toma de decisiones turísticas.
+Para ello, se parte de un dataset completo de vinos, regiones vitivinícolas, denominaciones de origen, variedades de uva, precios y puntuaciones. Toda esta información se transforma en conocimiento accionable para planificar un viaje enológico personalizado.
 
-El resultado final es un dashboard interactivo en Power BI que permite:
+**Resultado final:** Un dashboard interactivo en Power BI que permite:
 
-✔ Visualizar el contexto global y nacional del vino
+✔ Visualizar el contexto global y nacional del sector vinícola
 ✔ Filtrar la oferta en función de parámetros individuales y colectivos
-✔ Detectar "joyas ocultas" de calidad y precio atractivo
-✔ Identificar las zonas óptimas para el disfrute conjunto
+✔ Detectar "joyas ocultas" de buena calidad y precio competitivo
+✔ Identificar zonas óptimas para un itinerario conjunto
 
 ---
 
 ## **2️⃣ Herramientas y Tecnologías Utilizadas**
 
-* **Power BI Desktop**: Desarrollo completo de dashboards, visualizaciones interactivas y filtros avanzados.
-* **DAX (Data Analysis Expressions)**: Creación de medidas, columnas calculadas y segmentaciones personalizadas basadas en lógicas condicionales complejas.
-* **Transformación de Datos (Power Query)**: Limpieza y homogeneización de campos, especialmente en la columna de regiones.
-* **Modelado de Datos**: Relaciones entre tablas de vinos, regiones, tipos de uva y perfiles de usuarias.
-* **Visualizaciones Avanzadas**: Uso de mapas, diagramas de dispersión, gráficos de barras y donuts, árboles de decisiones y segmentadores personalizados.
-* **Storytelling Visual**: Diseño coherente y tematizado para facilitar la comprensión del análisis y la propuesta final.
+* **Power BI Desktop** → Desarrollo completo de visualizaciones, paneles e informes interactivos
+* **DAX (Data Analysis Expressions)** → Creación de medidas, KPIs y lógicas condicionales avanzadas para personalizar la experiencia
+* **Power Query (Editor de consultas)** → Limpieza y estandarización de datos, especialmente campos de regiones y precios
+* **Modelado de Datos Relacional** → Construcción de relaciones entre tablas: vinos, regiones, variedades de uva y perfiles de usuarias
+* **Visualizaciones Interactivas Avanzadas** → Mapas, gráficos de dispersión, barras, donuts y segmentadores configurados a medida
+* **Enfoque de Storytelling Visual** → Diseño coherente, visualmente atractivo y adaptado al usuario final para facilitar la interpretación
 
 ---
 
 ## **3️⃣ Estructura Analítica del Proyecto**
 
-### **3.1 Contextualización Internacional**
+### **3.1 Contexto Internacional**
 
-Análisis macro de la situación vitivinícola mundial, comparando:
+Análisis macroeconómico del sector vitivinícola a nivel global:
 
-* Producción anual en hectolitros
-* Extensión de viñedo en hectáreas
-* Exportaciones de los principales países
-* Posicionamiento de España respecto a Francia e Italia
-
----
-
-### **3.2 Distribución Nacional de la Oferta**
-
-Mapa interactivo de Denominaciones de Origen Protegidas (DOP) y variedades de uva en España, permitiendo:
-
-* Localizar las principales zonas productoras
-* Visualizar la diversidad de uvas blancas y tintas
-* Relacionar geografía con tipología de vinos
+✔ Producción anual (hectolitros)
+✔ Superficie de viñedo por país
+✔ Exportaciones de principales productores
+✔ Comparativa España - Francia - Italia
 
 ---
 
-### **3.3 Segmentación Económica: Dos Rangos de Oferta**
+### **3.2 Mapa Nacional de Denominaciones y Variedades**
 
-* **Vinos asequibles**: Análisis de precios bajos con buena valoración
-* **Vinos premium**: Segmento de alta gama y máxima puntuación
+Visualización geográfica interactiva:
 
-Incluye visualizaciones de relación precio-valoración y detección de productos destacados ("joyas ocultas").
+✔ Localización de DOPs (Denominaciones de Origen Protegidas)
+✔ Distribución de variedades tintas y blancas
+✔ Relación entre geografía y tipología de producto
 
 ---
 
-### **3.4 Perfilado de Viajeras**
+### **3.3 Análisis Económico de la Oferta**
 
-Definición técnica de las condiciones de cada usuaria mediante lógica DAX:
+Dos segmentos de análisis:
 
-* **Montse**: Prioriza cercanía (Cataluña y alrededores) y precios bajos
-* **Iran**: Precio ≤150€, evita País Vasco
-* **Bea**: Flexibilidad amplia, foco en zona centro (Madrid, Castilla, Ribera del Duero)
-* **Ina**: Hasta 300€, prefiere norte pero acepta ciertas regiones interiores
-* **Noemi**: Hasta 250€, sin restricciones geográficas significativas
+* **Vinos asequibles** → Productos económicos con buenas valoraciones
+* **Vinos premium** → Alta gama y puntuaciones máximas
 
-Las preferencias se aplican dinámicamente en los filtros del dashboard para personalizar la oferta visible.
+Incluye relaciones precio-puntuación y detección de vinos destacados por su relación calidad-precio.
+
+---
+
+### **3.4 Perfilado Avanzado de Usuarias**
+
+Definición de restricciones y preferencias mediante DAX:
+
+| **Amiga** | **Condiciones**                                                          |
+| --------- | ------------------------------------------------------------------------ |
+| Montse    | Regiones cercanas a Cataluña y precios ≤200€                             |
+| Iran      | Precio ≤150€, evita País Vasco                                           |
+| Bea       | Precio ≤250€, foco en zona centro (Madrid, Castilla, Ribera del Duero)   |
+| Ina       | Hasta 300€, prefiere norte, acepta interior (Castilla, Ribera del Duero) |
+| Noemi     | Hasta 250€, sin limitaciones geográficas                                 |
+
+Estas condiciones se aplican dinámicamente, segmentando los resultados en el dashboard.
 
 ---
 
 ### **3.5 Análisis Individual y Colectivo**
 
-* Visualización de los vinos compatibles para cada amiga
-* Mapa de distribución regional según perfiles
-* Análisis conjunto para encontrar coincidencias (ruta común viable)
-* Evaluación de tipologías preferidas y relación calidad-precio por perfil
+* Visualización de vinos aptos por perfil
+* Mapa de distribución regional personalizada
+* Comparativa cruzada para encontrar coincidencias y diseñar una ruta común viable
+* Evaluación de tipologías y calidad-precio según preferencias individuales
 
 ---
 
-### **3.6 Propuesta de Ruta Óptima**
+### **3.6 Diseño de Ruta Óptima**
 
-Mediante filtros cruzados y análisis de viabilidad, se diseña un itinerario que:
+Mediante filtros y análisis cruzados:
 
-* Respeta las condiciones individuales
-* Maximiza la satisfacción común
-* Combina vinos asequibles y premium en diferentes paradas
-* Cubre regiones geográficamente coherentes
+✔ Respetar preferencias y restricciones individuales
+✔ Maximizar la satisfacción común
+✔ Diseñar un itinerario coherente y geográficamente viable
+✔ Combinar experiencias asequibles y premium en el viaje
 
 ---
 
 ## **4️⃣ Conclusión Técnica**
 
-El proyecto combina:
+Este proyecto integra:
 
-✔ Modelado de datos y creación de relaciones complejas
-✔ Segmentación dinámica en función de múltiples criterios personalizados
-✔ Visualización intuitiva y clara para usuarios no técnicos
-✔ Aplicación práctica a casos reales de planificación turística
+✔ Modelado avanzado de datos y relaciones complejas
+✔ Segmentación dinámica multi-criterio personalizada
+✔ Visualizaciones interactivas intuitivas para el usuario final
+✔ Aplicación práctica a la planificación turística basada en datos
 
-Se demuestra cómo el uso avanzado de Power BI y DAX permite convertir grandes volúmenes de datos en soluciones concretas, adaptadas a necesidades individuales y grupales.
+Se demuestra la capacidad de Power BI y DAX para transformar grandes volúmenes de datos en soluciones concretas y personalizadas, tanto a nivel individual como grupal.
 
 ---
 
 ## **5️⃣ Potencial de Escalabilidad**
 
-Esta metodología es extrapolable a otros contextos como:
+El modelo es ampliable a:
 
-* Eventos personalizados
-* Recomendaciones en plataformas de turismo o e-commerce
-* Optimización logística de rutas
-* Diseño de experiencias en grupos heterogéneos
+✔ Otros grupos con preferencias diferentes
+✔ Incorporación de datos logísticos (distancias, tiempos, costes de transporte)
+✔ Inclusión de otras variables turísticas (gastronomía, alojamientos, actividades complementarias)
+✔ Creación de itinerarios optimizados de forma automática
+
+---
+
+## **6️⃣ Autoras y Colaboradoras** **Enlaces a Repositorios Personales**
+
+👩 **Montse** * GitHub \[enlace]
+👩 **Iran** * GitHub \[enlace]
+👩 **Bea** * GitHub \[enlace]
+👩 **Ina** * GitHub \[enlace]
+👩 **Noemi** * GitHub \[enlace]
+
+
 
